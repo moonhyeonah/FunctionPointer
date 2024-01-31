@@ -1,0 +1,45 @@
+- 함수 포인터 선언
+int (*operation)(int, int);
+
+- 함수 인자에서 함수 포인터
+int performOperation(int (*operation)(int, int), int x, int y) {
+    return operation(x, y);
+}
+
+- 함수 반환값에서 함수 포인터
+int (*selectOperation(char op))(int, int) {
+    switch (op) {
+        case '+':
+            return add;
+        case '-':
+            return subtract;
+        default:
+            return NULL;
+    }
+}
+
+- 구조체 멤버로 사용되는 함수 포인터
+struct animal {
+    char species;
+    void (*walk)(); 
+    void (*move)(int, int); 
+};
+
+- 함수 포인터 배열
+int (*operationArray[4])(int, int); 
+
+- 함수 포인터가 가리키는 함수의 인자가 함수 포인터 
+int (*f)( int (*g)(int), int);
+
+- 함수 포인터가 가리키는 함수의 반환값이 함수 포인터
+void (*(*FunctionPointerReturningFunction)(void))(void);
+
+typedef void (*FunctionPointer)(int);
+typedef FunctionPointer (*FunctionPointerReturningFunction)(char);
+
+void (*(*FunctionPointerReturningFunction)(char))(int);
+
+- 함수 포인터가 가리키는 함수의 인자가 함수 포인터 배열
+int (*f)(int (*arr[4])(int, int), int, int);
+
+- 함수 포인터가 가리키는 함수의 인자 또는 반환값이 함수 포인터 배열 
