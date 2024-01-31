@@ -1,0 +1,143 @@
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	save_context -> 
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	save_context -> 
+	option_type_qualifier_list -> 
+	option_pointer -> 
+	pointer -> * option_type_qualifier_list option_pointer
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> pointer direct_declarator
+	direct_declarator -> ( save_context declarator )
+	save_context -> 
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_declaration
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_list , parameter_declaration
+	option_comma_dotdotdot -> 
+	save_context -> 
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+	scoped_parameter_type_list -> save_context parameter_type_list
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+	declarator -> direct_declarator
+	declarator_varname -> declarator
+	parameter_declaration -> declaration_specifiers declarator_varname
+	parameter_list -> parameter_declaration
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> direct_declarator
+	declarator_varname -> declarator
+	parameter_declaration -> declaration_specifiers declarator_varname
+	parameter_list -> parameter_list , parameter_declaration
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> direct_declarator
+	declarator_varname -> declarator
+	parameter_declaration -> declaration_specifiers declarator_varname
+	parameter_list -> parameter_list , parameter_declaration
+	option_comma_dotdotdot -> 
+	save_context -> 
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+	scoped_parameter_type_list -> save_context parameter_type_list
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+	declarator -> direct_declarator
+	declarator_varname -> declarator
+	function_definition1 -> declaration_specifiers declarator_varname
+	option_declaration_list -> 
+	option_block_item_list -> 
+	var_name -> NAME VARIABLE
+	primary_expression -> var_name
+	postfix_expression -> primary_expression
+	var_name -> NAME VARIABLE
+	primary_expression -> var_name
+	postfix_expression -> primary_expression
+	unary_expression -> postfix_expression
+	cast_expression -> unary_expression
+	multiplicative_expression -> cast_expression
+	additive_expression -> multiplicative_expression
+	shift_expression -> additive_expression
+	relational_expression -> shift_expression
+	equality_expression -> relational_expression
+	and_expression -> equality_expression
+	exclusive_or_expression -> and_expression
+	inclusive_or_expression -> exclusive_or_expression
+	logical_and_expression -> inclusive_or_expression
+	logical_or_expression -> logical_and_expression
+	conditional_expression -> logical_or_expression
+	assignment_expression -> conditional_expression
+	argument_expression_list -> assignment_expression
+	var_name -> NAME VARIABLE
+	primary_expression -> var_name
+	postfix_expression -> primary_expression
+	unary_expression -> postfix_expression
+	cast_expression -> unary_expression
+	multiplicative_expression -> cast_expression
+	additive_expression -> multiplicative_expression
+	shift_expression -> additive_expression
+	relational_expression -> shift_expression
+	equality_expression -> relational_expression
+	and_expression -> equality_expression
+	exclusive_or_expression -> and_expression
+	inclusive_or_expression -> exclusive_or_expression
+	logical_and_expression -> inclusive_or_expression
+	logical_or_expression -> logical_and_expression
+	conditional_expression -> logical_or_expression
+	assignment_expression -> conditional_expression
+	argument_expression_list -> argument_expression_list , assignment_expression
+	option_argument_expression_list -> argument_expression_list
+	postfix_expression -> postfix_expression ( option_argument_expression_list )
+	unary_expression -> postfix_expression
+	cast_expression -> unary_expression
+	multiplicative_expression -> cast_expression
+	additive_expression -> multiplicative_expression
+	shift_expression -> additive_expression
+	relational_expression -> shift_expression
+	equality_expression -> relational_expression
+	and_expression -> equality_expression
+	exclusive_or_expression -> and_expression
+	inclusive_or_expression -> exclusive_or_expression
+	logical_and_expression -> inclusive_or_expression
+	logical_or_expression -> logical_and_expression
+	conditional_expression -> logical_or_expression
+	assignment_expression -> conditional_expression
+	expression -> assignment_expression
+	option_expression -> expression
+	jump_statement -> return option_expression ;
+	statement -> jump_statement
+	block_item -> statement
+	block_item_list -> option_block_item_list block_item
+	option_block_item_list -> block_item_list
+	compound_statement -> { option_block_item_list }
+	function_definition -> function_definition1 option_declaration_list compound_statement
+	external_declaration -> function_definition
+	translation_unit_file -> external_declaration $
