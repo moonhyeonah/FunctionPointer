@@ -1,0 +1,41 @@
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	save_context -> 
+	option_type_qualifier_list -> 
+	option_pointer -> 
+	pointer -> * option_type_qualifier_list option_pointer
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> pointer direct_declarator
+	direct_declarator -> ( save_context declarator )
+	save_context -> 
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_declaration
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_list , parameter_declaration
+	option_comma_dotdotdot -> 
+	save_context -> 
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+	scoped_parameter_type_list -> save_context parameter_type_list
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+	declarator -> direct_declarator
+	declarator_varname -> declarator
+	init_declarator_declarator_varname -> declarator_varname
+	init_declarator_list_declarator_varname -> init_declarator_declarator_varname
+	option_init_declarator_list_declarator_varname -> init_declarator_list_declarator_varname
+	declaration -> declaration_specifiers option_init_declarator_list_declarator_varname ;
+	external_declaration -> declaration
+	translation_unit_file -> external_declaration $

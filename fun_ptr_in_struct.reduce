@@ -1,0 +1,87 @@
+	struct_or_union -> struct
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	option_general_identifier -> general_identifier
+	type_specifier_nonunique -> char
+	list_type_qualifier -> 
+	list_ge1_type_specifier_nonunique_type_qualifier -> type_specifier_nonunique list_type_qualifier
+	specifier_qualifier_list -> list_ge1_type_specifier_nonunique_type_qualifier
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> direct_declarator
+	struct_declarator -> declarator
+	struct_declarator_list -> struct_declarator
+	option_struct_declarator_list -> struct_declarator_list
+	struct_declaration -> specifier_qualifier_list option_struct_declarator_list ;
+	struct_declaration_list -> struct_declaration
+	type_specifier_unique -> void
+	list_type_qualifier -> 
+	list_eq1_type_specifier_unique_type_qualifier -> type_specifier_unique list_type_qualifier
+	specifier_qualifier_list -> list_eq1_type_specifier_unique_type_qualifier
+	save_context -> 
+	option_type_qualifier_list -> 
+	option_pointer -> 
+	pointer -> * option_type_qualifier_list option_pointer
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> pointer direct_declarator
+	direct_declarator -> ( save_context declarator )
+	save_context -> 
+	option_identifier_list -> 
+	direct_declarator -> direct_declarator ( save_context option_identifier_list )
+	declarator -> direct_declarator
+	struct_declarator -> declarator
+	struct_declarator_list -> struct_declarator
+	option_struct_declarator_list -> struct_declarator_list
+	struct_declaration -> specifier_qualifier_list option_struct_declarator_list ;
+	struct_declaration_list -> struct_declaration_list struct_declaration
+	type_specifier_unique -> void
+	list_type_qualifier -> 
+	list_eq1_type_specifier_unique_type_qualifier -> type_specifier_unique list_type_qualifier
+	specifier_qualifier_list -> list_eq1_type_specifier_unique_type_qualifier
+	save_context -> 
+	option_type_qualifier_list -> 
+	option_pointer -> 
+	pointer -> * option_type_qualifier_list option_pointer
+	var_name -> NAME VARIABLE
+	general_identifier -> var_name
+	direct_declarator -> general_identifier
+	declarator -> pointer direct_declarator
+	direct_declarator -> ( save_context declarator )
+	save_context -> 
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_declaration
+	type_specifier_nonunique -> int
+	list_declaration_specifier -> 
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+	option_abstract_declarator -> 
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+	parameter_list -> parameter_list , parameter_declaration
+	option_comma_dotdotdot -> 
+	save_context -> 
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+	scoped_parameter_type_list -> save_context parameter_type_list
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+	declarator -> direct_declarator
+	struct_declarator -> declarator
+	struct_declarator_list -> struct_declarator
+	option_struct_declarator_list -> struct_declarator_list
+	struct_declaration -> specifier_qualifier_list option_struct_declarator_list ;
+	struct_declaration_list -> struct_declaration_list struct_declaration
+	struct_or_union_specifier -> struct_or_union option_general_identifier { struct_declaration_list }
+	type_specifier_unique -> struct_or_union_specifier
+	list_declaration_specifier -> 
+	list_eq1_type_specifier_unique_declaration_specifier -> type_specifier_unique list_declaration_specifier
+	declaration_specifiers -> list_eq1_type_specifier_unique_declaration_specifier
+	option_init_declarator_list_declarator_varname -> 
+	declaration -> declaration_specifiers option_init_declarator_list_declarator_varname ;
+	external_declaration -> declaration
+	translation_unit_file -> external_declaration $
