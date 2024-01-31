@@ -1,0 +1,2 @@
+int (*operation)(int, int);
+
