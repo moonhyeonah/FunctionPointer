@@ -1,0 +1,1490 @@
+
+State 0
+Token int
+Stack S0 : STACK END
+Shift 34
+int at (1, 1): int
+
+State 34
+Token (
+Stack S34 : int : S0 : STACK END
+Reduce 128
+	type_specifier_nonunique -> int
+
+State 17
+Token (
+Stack S17 : type_specifier_nonunique : S0 : STACK END
+Reduce 295
+	list_declaration_specifier -> 
+
+State 80
+Token (
+Stack S80 : list_declaration_specifier : S17 : type_specifier_nonunique : S0 : STACK END
+Reduce 305
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+
+State 14
+Token (
+Stack S14 : list_ge1_type_specifier_nonunique_declaration_specifier : S0 : STACK END
+Reduce 110
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+
+State 5
+Token (
+Stack S5 : declaration_specifiers : S0 : STACK END
+Shift 66
+( at (1, 5): (
+
+State 66
+Token *
+Stack S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 115
+Token *
+Stack S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 67
+* at (1, 6): *
+
+State 67
+Token NAME
+Stack S67 : * : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 265
+	option_type_qualifier_list -> 
+
+State 116
+Token NAME
+Stack S116 : option_type_qualifier_list : S67 : * : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 273
+	option_pointer -> 
+
+State 194
+Token NAME
+Stack S194 : option_pointer : S116 : option_type_qualifier_list : S67 : * : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 184
+	pointer -> * option_type_qualifier_list option_pointer
+
+State 64
+Token NAME
+Stack S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 65
+selectOperation at (1, 7): NAME
+
+State 65
+Token VARIABLE
+Stack S65 : NAME i.e. selectOperation : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 114
+VARIABLE at (1, 22): VARIABLE
+
+State 114
+Token (
+Stack S114 : VARIABLE : S65 : NAME i.e. selectOperation : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 56
+Token (
+Stack S56 : var_name : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 5
+	general_identifier -> var_name
+
+State 57
+Token (
+Stack S57 : general_identifier : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 176
+	direct_declarator -> general_identifier
+
+State 113
+Token (
+Stack S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 111
+( at (1, 22): (
+
+State 111
+Token char
+Stack S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 186
+Token char
+Stack S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 32
+char at (1, 23): char
+
+State 32
+Token NAME
+Stack S32 : char : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 126
+	type_specifier_nonunique -> char
+
+State 106
+Token NAME
+Stack S106 : type_specifier_nonunique : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 295
+	list_declaration_specifier -> 
+
+State 80
+Token NAME
+Stack S80 : list_declaration_specifier : S106 : type_specifier_nonunique : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 305
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+
+State 14
+Token NAME
+Stack S14 : list_ge1_type_specifier_nonunique_declaration_specifier : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 110
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+
+State 298
+Token NAME
+Stack S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 65
+op at (1, 28): NAME
+
+State 65
+Token VARIABLE
+Stack S65 : NAME i.e. op : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 114
+VARIABLE at (1, 30): VARIABLE
+
+State 114
+Token )
+Stack S114 : VARIABLE : S65 : NAME i.e. op : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 56
+Token )
+Stack S56 : var_name : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 5
+	general_identifier -> var_name
+
+State 57
+Token )
+Stack S57 : general_identifier : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 176
+	direct_declarator -> general_identifier
+
+State 63
+Token )
+Stack S63 : direct_declarator : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 174
+	declarator -> direct_declarator
+
+State 385
+Token )
+Stack S385 : declarator : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 13
+	declarator_varname -> declarator
+
+State 384
+Token )
+Stack S384 : declarator_varname : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 189
+	parameter_declaration -> declaration_specifiers declarator_varname
+
+State 301
+Token )
+Stack S301 : parameter_declaration : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 187
+	parameter_list -> parameter_declaration
+
+State 300
+Token )
+Stack S300 : parameter_list : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 251
+	option_comma_dotdotdot -> 
+
+State 390
+Token )
+Stack S390 : option_comma_dotdotdot : S300 : parameter_list : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 446
+Token )
+Stack S446 : save_context : S390 : option_comma_dotdotdot : S300 : parameter_list : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 186
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+
+State 297
+Token )
+Stack S297 : parameter_type_list : S186 : save_context : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 7
+	scoped_parameter_type_list -> save_context parameter_type_list
+
+State 187
+Token )
+Stack S187 : scoped_parameter_type_list : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 303
+) at (1, 30): )
+
+State 303
+Token )
+Stack S303 : ) : S187 : scoped_parameter_type_list : S111 : ( : S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 182
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+
+State 113
+Token )
+Stack S113 : direct_declarator : S64 : pointer : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 175
+	declarator -> pointer direct_declarator
+
+State 191
+Token )
+Stack S191 : declarator : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Shift 309
+) at (1, 31): )
+
+State 309
+Token (
+Stack S309 : ) : S191 : declarator : S115 : save_context : S66 : ( : S5 : declaration_specifiers : S0 : STACK END
+Reduce 177
+	direct_declarator -> ( save_context declarator )
+
+State 63
+Token (
+Stack S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Shift 111
+( at (1, 32): (
+
+State 111
+Token int
+Stack S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 186
+Token int
+Stack S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Shift 34
+int at (1, 33): int
+
+State 34
+Token ,
+Stack S34 : int : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 128
+	type_specifier_nonunique -> int
+
+State 106
+Token ,
+Stack S106 : type_specifier_nonunique : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 295
+	list_declaration_specifier -> 
+
+State 80
+Token ,
+Stack S80 : list_declaration_specifier : S106 : type_specifier_nonunique : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 305
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+
+State 14
+Token ,
+Stack S14 : list_ge1_type_specifier_nonunique_declaration_specifier : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 110
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+
+State 298
+Token ,
+Stack S298 : declaration_specifiers : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 275
+	option_abstract_declarator -> 
+
+State 387
+Token ,
+Stack S387 : option_abstract_declarator : S298 : declaration_specifiers : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 190
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+
+State 301
+Token ,
+Stack S301 : parameter_declaration : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 187
+	parameter_list -> parameter_declaration
+
+State 300
+Token ,
+Stack S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Shift 391
+, at (1, 36): ,
+
+State 391
+Token int
+Stack S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Shift 34
+int at (1, 38): int
+
+State 34
+Token )
+Stack S34 : int : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 128
+	type_specifier_nonunique -> int
+
+State 106
+Token )
+Stack S106 : type_specifier_nonunique : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 295
+	list_declaration_specifier -> 
+
+State 80
+Token )
+Stack S80 : list_declaration_specifier : S106 : type_specifier_nonunique : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 305
+	list_ge1_type_specifier_nonunique_declaration_specifier -> type_specifier_nonunique list_declaration_specifier
+
+State 14
+Token )
+Stack S14 : list_ge1_type_specifier_nonunique_declaration_specifier : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 110
+	declaration_specifiers -> list_ge1_type_specifier_nonunique_declaration_specifier
+
+State 298
+Token )
+Stack S298 : declaration_specifiers : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 275
+	option_abstract_declarator -> 
+
+State 387
+Token )
+Stack S387 : option_abstract_declarator : S298 : declaration_specifiers : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 190
+	parameter_declaration -> declaration_specifiers option_abstract_declarator
+
+State 447
+Token )
+Stack S447 : parameter_declaration : S391 : , : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 188
+	parameter_list -> parameter_list , parameter_declaration
+
+State 300
+Token )
+Stack S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 251
+	option_comma_dotdotdot -> 
+
+State 390
+Token )
+Stack S390 : option_comma_dotdotdot : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 446
+Token )
+Stack S446 : save_context : S390 : option_comma_dotdotdot : S300 : parameter_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 186
+	parameter_type_list -> parameter_list option_comma_dotdotdot save_context
+
+State 297
+Token )
+Stack S297 : parameter_type_list : S186 : save_context : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 7
+	scoped_parameter_type_list -> save_context parameter_type_list
+
+State 187
+Token )
+Stack S187 : scoped_parameter_type_list : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Shift 303
+) at (1, 41): )
+
+State 303
+Token {
+Stack S303 : ) : S187 : scoped_parameter_type_list : S111 : ( : S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 182
+	direct_declarator -> direct_declarator ( scoped_parameter_type_list )
+
+State 63
+Token {
+Stack S63 : direct_declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 174
+	declarator -> direct_declarator
+
+State 59
+Token {
+Stack S59 : declarator : S5 : declaration_specifiers : S0 : STACK END
+Reduce 13
+	declarator_varname -> declarator
+
+State 58
+Token {
+Stack S58 : declarator_varname : S5 : declaration_specifiers : S0 : STACK END
+Reduce 243
+	function_definition1 -> declaration_specifiers declarator_varname
+
+State 25
+Token {
+Stack S25 : function_definition1 : S0 : STACK END
+Reduce 291
+	option_declaration_list -> 
+
+State 94
+Token {
+Stack S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 129
+{ at (1, 43): {
+
+State 129
+Token switch
+Stack S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 287
+	option_block_item_list -> 
+
+State 201
+Token switch
+Stack S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 320
+Token switch
+Stack S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 405
+switch at (2, 5): switch
+
+State 405
+Token (
+Stack S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 456
+( at (2, 12): (
+
+State 456
+Token NAME
+Stack S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 179
+op at (2, 13): NAME
+
+State 179
+Token VARIABLE
+Stack S179 : NAME i.e. op : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 114
+VARIABLE at (2, 15): VARIABLE
+
+State 114
+Token )
+Stack S114 : VARIABLE : S179 : NAME i.e. op : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 143
+Token )
+Stack S143 : var_name : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 15
+	primary_expression -> var_name
+
+State 144
+Token )
+Stack S144 : primary_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token )
+Stack S147 : postfix_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 181
+Token )
+Stack S181 : unary_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token )
+Stack S150 : cast_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token )
+Stack S151 : multiplicative_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token )
+Stack S152 : additive_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token )
+Stack S153 : shift_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token )
+Stack S154 : relational_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token )
+Stack S155 : equality_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token )
+Stack S156 : and_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token )
+Stack S157 : exclusive_or_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token )
+Stack S158 : inclusive_or_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token )
+Stack S159 : logical_and_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token )
+Stack S160 : logical_or_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 182
+Token )
+Stack S182 : conditional_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 86
+	assignment_expression -> conditional_expression
+
+State 268
+Token )
+Stack S268 : assignment_expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 99
+	expression -> assignment_expression
+
+State 484
+Token )
+Stack S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 501
+) at (2, 15): )
+
+State 501
+Token {
+Stack S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 458
+Token {
+Stack S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 6
+	save_context -> 
+
+State 320
+Token {
+Stack S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 129
+{ at (2, 17): {
+
+State 129
+Token case
+Stack S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 287
+	option_block_item_list -> 
+
+State 201
+Token case
+Stack S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 334
+case at (3, 9): case
+
+State 334
+Token CONSTANT
+Stack S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 163
+'+' at (3, 14): CONSTANT
+
+State 163
+Token :
+Stack S163 : CONSTANT i.e. '+' : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 16
+	primary_expression -> CONSTANT
+
+State 144
+Token :
+Stack S144 : primary_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token :
+Stack S147 : postfix_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 148
+Token :
+Stack S148 : unary_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token :
+Stack S150 : cast_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token :
+Stack S151 : multiplicative_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token :
+Stack S152 : additive_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token :
+Stack S153 : shift_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token :
+Stack S154 : relational_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token :
+Stack S155 : equality_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token :
+Stack S156 : and_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token :
+Stack S157 : exclusive_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token :
+Stack S158 : inclusive_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token :
+Stack S159 : logical_and_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token :
+Stack S160 : logical_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 161
+Token :
+Stack S161 : conditional_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 101
+	constant_expression -> conditional_expression
+
+State 411
+Token :
+Stack S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 462
+: at (3, 17): :
+
+State 462
+Token return
+Stack S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 338
+return at (4, 13): return
+
+State 338
+Token NAME
+Stack S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 179
+add at (4, 20): NAME
+
+State 179
+Token VARIABLE
+Stack S179 : NAME i.e. add : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 114
+VARIABLE at (4, 23): VARIABLE
+
+State 114
+Token ;
+Stack S114 : VARIABLE : S179 : NAME i.e. add : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 143
+Token ;
+Stack S143 : var_name : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 15
+	primary_expression -> var_name
+
+State 144
+Token ;
+Stack S144 : primary_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token ;
+Stack S147 : postfix_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 181
+Token ;
+Stack S181 : unary_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token ;
+Stack S150 : cast_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token ;
+Stack S151 : multiplicative_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token ;
+Stack S152 : additive_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token ;
+Stack S153 : shift_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token ;
+Stack S154 : relational_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token ;
+Stack S155 : equality_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token ;
+Stack S156 : and_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token ;
+Stack S157 : exclusive_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token ;
+Stack S158 : inclusive_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token ;
+Stack S159 : logical_and_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token ;
+Stack S160 : logical_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 182
+Token ;
+Stack S182 : conditional_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 86
+	assignment_expression -> conditional_expression
+
+State 268
+Token ;
+Stack S268 : assignment_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 99
+	expression -> assignment_expression
+
+State 325
+Token ;
+Stack S325 : expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 290
+	option_expression -> expression
+
+State 415
+Token ;
+Stack S415 : option_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 464
+; at (4, 23): ;
+
+State 464
+Token case
+Stack S464 : ; : S415 : option_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 238
+	jump_statement -> return option_expression ;
+
+State 329
+Token case
+Stack S329 : jump_statement : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 219
+	statement -> jump_statement
+
+State 490
+Token case
+Stack S490 : statement : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 221
+	labeled_statement -> case constant_expression : statement
+
+State 327
+Token case
+Stack S327 : labeled_statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 214
+	statement -> labeled_statement
+
+State 324
+Token case
+Stack S324 : statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 226
+	block_item -> statement
+
+State 330
+Token case
+Stack S330 : block_item : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 224
+	block_item_list -> option_block_item_list block_item
+
+State 202
+Token case
+Stack S202 : block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 288
+	option_block_item_list -> block_item_list
+
+State 201
+Token case
+Stack S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 334
+case at (5, 9): case
+
+State 334
+Token CONSTANT
+Stack S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 163
+'-' at (5, 14): CONSTANT
+
+State 163
+Token :
+Stack S163 : CONSTANT i.e. '-' : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 16
+	primary_expression -> CONSTANT
+
+State 144
+Token :
+Stack S144 : primary_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token :
+Stack S147 : postfix_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 148
+Token :
+Stack S148 : unary_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token :
+Stack S150 : cast_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token :
+Stack S151 : multiplicative_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token :
+Stack S152 : additive_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token :
+Stack S153 : shift_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token :
+Stack S154 : relational_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token :
+Stack S155 : equality_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token :
+Stack S156 : and_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token :
+Stack S157 : exclusive_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token :
+Stack S158 : inclusive_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token :
+Stack S159 : logical_and_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token :
+Stack S160 : logical_or_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 161
+Token :
+Stack S161 : conditional_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 101
+	constant_expression -> conditional_expression
+
+State 411
+Token :
+Stack S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 462
+: at (5, 17): :
+
+State 462
+Token return
+Stack S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 338
+return at (6, 13): return
+
+State 338
+Token NAME
+Stack S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 179
+subtract at (6, 20): NAME
+
+State 179
+Token VARIABLE
+Stack S179 : NAME i.e. subtract : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 114
+VARIABLE at (6, 28): VARIABLE
+
+State 114
+Token ;
+Stack S114 : VARIABLE : S179 : NAME i.e. subtract : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 143
+Token ;
+Stack S143 : var_name : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 15
+	primary_expression -> var_name
+
+State 144
+Token ;
+Stack S144 : primary_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token ;
+Stack S147 : postfix_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 181
+Token ;
+Stack S181 : unary_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token ;
+Stack S150 : cast_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token ;
+Stack S151 : multiplicative_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token ;
+Stack S152 : additive_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token ;
+Stack S153 : shift_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token ;
+Stack S154 : relational_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token ;
+Stack S155 : equality_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token ;
+Stack S156 : and_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token ;
+Stack S157 : exclusive_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token ;
+Stack S158 : inclusive_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token ;
+Stack S159 : logical_and_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token ;
+Stack S160 : logical_or_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 182
+Token ;
+Stack S182 : conditional_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 86
+	assignment_expression -> conditional_expression
+
+State 268
+Token ;
+Stack S268 : assignment_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 99
+	expression -> assignment_expression
+
+State 325
+Token ;
+Stack S325 : expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 290
+	option_expression -> expression
+
+State 415
+Token ;
+Stack S415 : option_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 464
+; at (6, 28): ;
+
+State 464
+Token default
+Stack S464 : ; : S415 : option_expression : S338 : return : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 238
+	jump_statement -> return option_expression ;
+
+State 329
+Token default
+Stack S329 : jump_statement : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 219
+	statement -> jump_statement
+
+State 490
+Token default
+Stack S490 : statement : S462 : : : S411 : constant_expression : S334 : case : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 221
+	labeled_statement -> case constant_expression : statement
+
+State 327
+Token default
+Stack S327 : labeled_statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 214
+	statement -> labeled_statement
+
+State 324
+Token default
+Stack S324 : statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 226
+	block_item -> statement
+
+State 330
+Token default
+Stack S330 : block_item : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 224
+	block_item_list -> option_block_item_list block_item
+
+State 202
+Token default
+Stack S202 : block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 288
+	option_block_item_list -> block_item_list
+
+State 201
+Token default
+Stack S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 332
+default at (7, 9): default
+
+State 332
+Token :
+Stack S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 410
+: at (7, 16): :
+
+State 410
+Token return
+Stack S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 338
+return at (8, 13): return
+
+State 338
+Token NAME
+Stack S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 179
+NULL at (8, 20): NAME
+
+State 179
+Token VARIABLE
+Stack S179 : NAME i.e. NULL : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 114
+VARIABLE at (8, 24): VARIABLE
+
+State 114
+Token ;
+Stack S114 : VARIABLE : S179 : NAME i.e. NULL : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 2
+	var_name -> NAME VARIABLE
+
+State 143
+Token ;
+Stack S143 : var_name : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 15
+	primary_expression -> var_name
+
+State 144
+Token ;
+Stack S144 : primary_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 25
+	postfix_expression -> primary_expression
+
+State 147
+Token ;
+Stack S147 : postfix_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 36
+	unary_expression -> postfix_expression
+
+State 181
+Token ;
+Stack S181 : unary_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 49
+	cast_expression -> unary_expression
+
+State 150
+Token ;
+Stack S150 : cast_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 54
+	multiplicative_expression -> cast_expression
+
+State 151
+Token ;
+Stack S151 : multiplicative_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 58
+	additive_expression -> multiplicative_expression
+
+State 152
+Token ;
+Stack S152 : additive_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 62
+	shift_expression -> additive_expression
+
+State 153
+Token ;
+Stack S153 : shift_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 68
+	relational_expression -> shift_expression
+
+State 154
+Token ;
+Stack S154 : relational_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 72
+	equality_expression -> relational_expression
+
+State 155
+Token ;
+Stack S155 : equality_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 74
+	and_expression -> equality_expression
+
+State 156
+Token ;
+Stack S156 : and_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 76
+	exclusive_or_expression -> and_expression
+
+State 157
+Token ;
+Stack S157 : exclusive_or_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 78
+	inclusive_or_expression -> exclusive_or_expression
+
+State 158
+Token ;
+Stack S158 : inclusive_or_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 80
+	logical_and_expression -> inclusive_or_expression
+
+State 159
+Token ;
+Stack S159 : logical_and_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 82
+	logical_or_expression -> logical_and_expression
+
+State 160
+Token ;
+Stack S160 : logical_or_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 84
+	conditional_expression -> logical_or_expression
+
+State 182
+Token ;
+Stack S182 : conditional_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 86
+	assignment_expression -> conditional_expression
+
+State 268
+Token ;
+Stack S268 : assignment_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 99
+	expression -> assignment_expression
+
+State 325
+Token ;
+Stack S325 : expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 290
+	option_expression -> expression
+
+State 415
+Token ;
+Stack S415 : option_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 464
+; at (8, 24): ;
+
+State 464
+Token }
+Stack S464 : ; : S415 : option_expression : S338 : return : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 238
+	jump_statement -> return option_expression ;
+
+State 329
+Token }
+Stack S329 : jump_statement : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 219
+	statement -> jump_statement
+
+State 461
+Token }
+Stack S461 : statement : S410 : : : S332 : default : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 222
+	labeled_statement -> default : statement
+
+State 327
+Token }
+Stack S327 : labeled_statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 214
+	statement -> labeled_statement
+
+State 324
+Token }
+Stack S324 : statement : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 226
+	block_item -> statement
+
+State 330
+Token }
+Stack S330 : block_item : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 224
+	block_item_list -> option_block_item_list block_item
+
+State 202
+Token }
+Stack S202 : block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 288
+	option_block_item_list -> block_item_list
+
+State 201
+Token }
+Stack S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 333
+} at (9, 5): }
+
+State 333
+Token }
+Stack S333 : } : S201 : option_block_item_list : S129 : { : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 223
+	compound_statement -> { option_block_item_list }
+
+State 401
+Token }
+Stack S401 : compound_statement : S320 : save_context : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 8
+	scoped_compound_statement -> save_context compound_statement
+
+State 321
+Token }
+Stack S321 : scoped_compound_statement : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 215
+	statement -> scoped_compound_statement
+
+State 486
+Token }
+Stack S486 : statement : S458 : save_context : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 11
+	scoped_statement -> save_context statement
+
+State 513
+Token }
+Stack S513 : scoped_statement : S501 : ) : S484 : expression : S456 : ( : S405 : switch : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 230
+	selection_statement -> switch ( expression ) scoped_statement
+
+State 402
+Token }
+Stack S402 : selection_statement : S320 : save_context : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 9
+	scoped_selection_statement -> save_context selection_statement
+
+State 322
+Token }
+Stack S322 : scoped_selection_statement : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 217
+	statement -> scoped_selection_statement
+
+State 324
+Token }
+Stack S324 : statement : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 226
+	block_item -> statement
+
+State 330
+Token }
+Stack S330 : block_item : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 224
+	block_item_list -> option_block_item_list block_item
+
+State 202
+Token }
+Stack S202 : block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 288
+	option_block_item_list -> block_item_list
+
+State 201
+Token }
+Stack S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Shift 333
+} at (10, 1): }
+
+Saving: S333 : } : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+
+State 333
+Token $
+Stack S333 : } : S201 : option_block_item_list : S129 : { : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 223
+	compound_statement -> { option_block_item_list }
+
+State 128
+Token $
+Stack S128 : compound_statement : S94 : option_declaration_list : S25 : function_definition1 : S0 : STACK END
+Reduce 244
+	function_definition -> function_definition1 option_declaration_list compound_statement
+
+State 24
+Token $
+Stack S24 : function_definition : S0 : STACK END
+Reduce 241
+	external_declaration -> function_definition
+
+State 23
+Token $
+Stack S23 : external_declaration : S0 : STACK END
+Shift 91
+$ at (12, 1): $
+
+State 91
+Token $
+Stack S91 : $ : S23 : external_declaration : S0 : STACK END
+Reduce 240
+	translation_unit_file -> external_declaration $
+
+State 1
+Token $
+Stack S1 : translation_unit_file : S0 : STACK END
+Accept
+$ at (13, 1): $
